@@ -10,23 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".CategoriasActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".TodoCategoriasActivity"
-            android:parentActivityName=".CategoriasActivity"/>
-
-        <activity android:name=".Abc_Activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".PalabrasActivity"
-            android:parentActivityName=".Abc_Activity"/>
-
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CategoriasActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TodoCategoriasActivity"
+            android:parentActivityName=".CategoriasActivity" />
+        <activity
+            android:name=".Abc_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PalabrasActivity"
+            android:parentActivityName=".Abc_Activity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

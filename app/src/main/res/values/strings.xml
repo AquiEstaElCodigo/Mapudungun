@@ -302,6 +302,8 @@
     <string name="bnt_informacion">Información</string>
     <string name="imageButton">boton con imagen</string>
     <string name="imagen_info">lukutuwe</string>
+    <string name="logo_splash">logoSplash</string>
+    <string name="mapudung_splash">Mapudungún</string>
 
 
 </resources>

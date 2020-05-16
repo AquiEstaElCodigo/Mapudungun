@@ -12,4 +12,6 @@
     <color name="ColorBotonesCategorias">#795548</color>
     <color name="appBarInformacion">#f44336</color>
 
+    <color name="backgroundSplash">#4CAF50</color>
+
 </resources>

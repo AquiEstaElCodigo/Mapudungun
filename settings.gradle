@@ -1,0 +1,2 @@
+rootProject.name='Mapudungun'
+include ':app'

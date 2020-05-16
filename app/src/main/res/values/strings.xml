@@ -1,0 +1,307 @@
+<resources>
+    <string name="app_name">Mapudungún</string>
+    <string name="boton_diccionario">Diccionario</string>
+    <string name="boton_categorias">Categorias</string>
+    <string name="titulo_act_principal">Mapudungún</string>
+    <string name="titulo_act_categorias">Categorias</string>
+    <string name="titulo_act_abecedario">Diccionario</string>
+    <string name="sub_tit_act_abecedario">letra</string>
+    <string name="img_banner_top">imagenBannerTop</string>
+    <string name="img_banner_bottom">imagenBannerBottom</string>
+    <string name="texto_mensajes">No existen palabras con esta letra\n</string>
+    <string name="info_texto">Desarrollado por: <b> Germán Riveros Sepúlveda. </b> \n</string>
+
+    <!--
+           *** Números ***
+    -->
+
+    <string name="TitCatNum">Números</string>
+    <string name="TextoNumeros"><b>1 Kiñe: </b> uno
+        \n<b>2 Epu:  </b> dos
+        \n<b>3 Küla: </b> tres
+        \n<b>4 Meli: </b> cuatro
+        \n<b>5 Kechu: </b> cinco
+        \n<b>6 Kayu: </b> seis
+        \n<b>7 Regle: </b> siete
+        \n<b>8 Pura: </b> ocho
+        \n<b>9 Aylla: </b> nueve
+        \n<b>10 Mari: </b> diez
+        \n<b>11 Mari kiñe: </b> once
+        \n<b>12 Mari epu: </b> doce
+        \n<b>20 Epu mari: </b> veinte
+        \n<b>21 Epu mari kiñe: </b> veintiuno
+        \n<b>25 Epu mari kechu: </b> veinticinco
+        \n<b>40 Meli mari: </b> cuarenta
+        \n<b>70 Regle mari: </b> setenta
+        \n<b>100 Pataka: </b> cien
+        \n<b>120 Kiñe pataka epu mari: </b> ciento veinte
+        \n<b>850 Pura pataka kechu mari: </b> ochocientos cincuenta
+        \n<b>1000 Waranga: </b> mil
+        \n<b>2000 Epu waranga: </b> dos mil \n
+    </string>
+
+    <!--
+           *** Pronunciación ***
+    -->
+    <string name="TitCatPron">Pronunciación</string>
+    <string name="TextoPronunciacion"><b>A:</b> como la <b> a</b> española.\n<b>Ch:</b> como la <b>
+        ch  </b> española.\n<b>D: </b> como la <b> z  </b> española, ausente en el castellano de
+        Chile. En algunas zonas se realiza como la <b> d </b> del español, pero con la punta de la
+        lengua entre los dientes.\n<b>E:</b> como la <b> e </b> española \n<b>F:</b> como la <b> f
+        </b> española. En algunas zonas se realiza como una <b> y </b>, es decir, labiodental.
+        \n<b>G:</b> como la <b> g </b> española que se encuentra entre vocales, menos marcada.
+        \n<b>I:</b> como la <b> i </b> española. Cuando el sonido \"i\" finaliza un diptongo, se
+        utiliza el \"y\". Ejemplo: felei, y no felei. \n<b>K:</b> como la <b> c </b> española, antes
+        de <i>a, o, u,</i> o como la <b> q </b> antes de <i>e, i</i>. \n<b>L:</b> como la <b> l </b>
+        española. \n<b>Ll:</b> como la <b> ll </b> del español de Castilla. En algunas zonas rurales
+        del sur de Chile se conserva y se distingue de la <b> y</b>.\n<b>M:</b> como la <b> m </b>
+        española. \n<b>N:</b> como la <b> n </b> española. \n<b>Ñ:</b> como la <b> ñ </b> española.
+        \n<b>Ng:</b> corresponde a un solo sonido que se articula con la lengua en el velo del
+        paladar (un poco más atrás que la <i>ñ</i>). No equivale a <b>n + g</b> españolas.\n<b>O:</b>
+        como la <b> o </b> española. \n<b>P:</b> como la <b> p </b> española.\n<b>R:</b> como una
+        <b> r </b> simple, pero con la punta de la lengua doblada hacia atrás. Muy parecida a la
+        <b> r </b> del inglés. Nunca será como la doble <b>r </b> del español.\n<b>S:</b> muy
+        parecida a la del español, aunque con mayor tensión y articulada con la punta de los dientes
+        contra los alvéolos. \n<b>T:</b> muy parecida a la del español, aunque un poco más atrás
+        (alvéolos en lugar de dientes). \n<b>Tr:</b> corresponde a un sonido que se articula como el
+        grupo <b>tr</b> en el español coloquial de Chile. No equivale a <b>t + r</b> españolas.
+        \n<b>U:</b> como la <b> u </b> española. Cuando el sonido \"u\" finaliza un diptongo, se
+        utiliza el \"w\". Ejemplo: <i>fewla y no feula</i>. \n<b>Ü:</b> como la <b> u </b> española,
+        pero con los labios estirados como cuando se articula una <i>i</i>. \n<b>W:</b> como la
+        <b> w </b> del inglés. Semejante a la pronunciación de los diptongos que comienzan con
+        <b>u </b> del español. Después de una vocal acentuada se pronuncia como <b> i</b>.
+        \n<b>Y:</b> cuando antecede a una vocal suena como la <b> y </b> española, aunque más suave.
+         Despues de vocal acentuada se pronuncia como la <b> u</b> española.\n<b>Sh:</b> en algunas
+        ocaciones aparece una letra <b>sh</b> supernumeraria que se utiliza para marcar el tono
+        afectivo o cariñoso. Suena como una <b> ch</b> más fricativa(arrastrada).\n
+    </string>
+
+    <!--
+               *** Pronombres ***
+    -->
+    <string name="TitCatPronombre">Pronombres</string>
+    <string name="TextoPronombres"><b>PERSONALES</b>
+        \n\t<i>Simples:</i>
+        \n\t\t<b>Inche:</b> yo
+        \n\t\t<b>Eymi:</b> tu
+        \n\t\t<b>Fey:</b> el
+        \n\t<i>Duales:</i>
+        \n\t\t<b>Inchiw:</b> nosotros dos
+        \n\t\t<b>Eymu:</b> ustedes dos
+        \n\t\t<b>Feyengu:</b> ellos dos
+        \n\t<i>Plurales:</i>
+        \n\t\t<b>Inchiñ:</b> nosotros (todos)
+        \n\t\t<b>Eymün:</b> ustedes (todos)
+        \n\t\t<b>Feyengün:</b> ellos (todos)
+        \n\n<b>POSESIVOS</b>\n\t<i>Simples:</i>
+        \n\t\t<b>Tañi:</b> mi (yo)
+        \n\t\t<b>Tami:</b> tu (tu)
+        \n\t\t<b>Tañi:</b> su (el)
+        \n\t<i>Duales:</i>
+        \n\t\t<b>Tayu:</b> nuestro (nosotros dos)
+        \n\t\t<b>Tamu:</b> vuestro (ustedes dos)
+        \n\t\t<b>Tañi:</b> su (ellos dos)
+        \n\t<i>Plurales:</i>
+        \n\t\t<b>Taiñ:</b> nuestro (nosotros)
+        \n\t\t<b>Tamün:</b> vuestro (ustedes)
+        \n\t\t<b>Tañi:</b> su (ellos)
+        \n\n<b>DEMOSTRATIVOS</b>
+        \n\t<b>Tüfa/ Tüfachi:</b> este, esta, esto
+        \n\t<b>Ta tüfa:</b> este es, esta es, esto es
+        \n\t<b>Tüfey/ tüfeychi/ feychi/ feytachi:</b> ese, esa, eso
+        \n\t<b>Ta tüfey:</b> ese es, esa es,
+        eso es\n\t<b>Fey:</b> este, esta, esto, ese, esa, eso
+        \n\t<b>Tiyechi:</b> aquel, aquella, aquello \n
+    </string>
+
+
+    <!--
+               *** Saludo y despedida ***
+    -->
+    <string name="TitCatSaludoDespedida">Saludo y \ndespedida</string>
+    <string name="TextoSaludoDespedida"><b>CHALIWÜN (Saludar)</b>
+        \n\n<i>Básico:</i>
+        \n<b>Mari Mari (peñi/lamngen):</b> Buenos días hermano(a)
+        \n<b>Pun May (peñi/lamngen):</b> Buenas noches hermano(a)
+        \n<b>Fücha kuifi:</b> tanto tiempo (sin vernos)
+        \n\n<i>Posibles preguntas:</i>
+        \n<b>¿Kümelküleymi?/ ¿Kümeleymi?/ ¿Kümelekaymi?:</b> ¿estas bien?
+        \n<b>¿Chumleymi?:</b> ¿cómo estas?
+        \n<b>¿Tremoleymi?:</b> ¿estas bien de salud?
+        \n\n<i>Posibles respuestas:</i>
+        \n<b>Kümelkülen/ Kümelen / Kümelkan:</b> estoy bien
+        \n<b>May:</b> si
+        \n<b>Tremolen:</b> estoy bien de salud
+        \n<b>Wedalkülen:</b> estoy mal
+        \n<b>Kütrankülen:</b> estoy enfermo
+        \n\n<b>PEWKAYALL (Despedirse)</b>\n
+        \n<b>Pewkayall:</b> hasta pronto (nos veremos)
+        \n<b>Pewkayall may:</b> si, hasta pronto
+        \n<b>Lemorria tami pu che:</b> dale saludos a tu familia
+        \n<b>Küme putuaymi tami ruca mew:</b> que llegues bien a tu casa
+        \n<b>Eymi kafey:</b> tu también
+        \n<b>Mañumkülen:</b> te agradezco \n
+    </string>
+
+    <!--
+               *** Conectores Gramaticales ***
+    -->
+    <string name="TitCatFrases">Frases comunes</string>
+    <string name="TextoConectores"><b>RELACIONADOS AL TIEMPO</b>
+        \n<b>Antü:</b> día
+        \n<b>Epuwe antü doy:</b> pasado mañana
+        \n<b>Epuwe antü mew:</b> anteayer
+        \n<b>Fachantü:</b> hoy día, este día
+        \n<b>Fewla:</b> ahora
+        \n<b>Fey wüla:</b> después, hay recien
+        \n<b>Konantü:</b> puesta del sol
+        \n<b>Kulay:</b> hace un rato (atrás)
+        \n<b>Küyen:</b> mes, luna
+        \n<b>Liwen/ Pu liwen:</b> la mañana
+        \n<b>Nagantü/ rupaiantü:</b> el atardecer
+        \n<b>Müchay:</b> luego, pronto, mas rato
+        \n<b>Petu:</b> todavía, aun
+        \n<b>Pun:</b> noche
+        \n<b>Rangipun:</b> la medianoche
+        \n<b>Rangiantü</b> el mediodía
+        \n<b>Trafiya:</b> anoche
+        \n<b>Tayi:</b> hace poco rato
+        \n<b>Tripantu:</b> año
+        \n<b>Upan:</b> después de
+        \n<b>Wile:</b> mañana
+        \n<b>Wiya:</b> ayer
+        \n<b>Wiya trafiya:</b> antenoche
+        \n<b>Wüla:</b> despues
+        \n<b>Wün:</b> el amanecer
+        \n\n<b>RELACIONADOS AL DISCURSO</b>
+        \n<b>che:</b> persona, gente, familia
+        \n<b>Chem pechi:</b> cualquier cosa
+        \n<b>Deu:</b> ya
+        \n<b>Doy:</b> más
+        \n<b>Duam:</b> necesidad, asunto, cosa, intención, recuerdo, gustar
+        \n<b>Emu:</b> con (se pone al final de una frase)
+        \n<b>Epe:</b> casi, ya casi
+        \n<b>Feley:</b> esta bien, así es, de acuerdo
+        \n<b>Felelay:</b> no es así, no se esta de acuerdo
+        \n<b>Felelafuy:</b> no fue así
+        \n<b>Felepe may:</b> que así sea
+        \n<b>Femngechi:</b> así, así es
+        \n<b>Felekeye:</b> espera un momento
+        \n<b>Fey wüla:</b> ahí recien
+        \n<b>Fentepuiñ:</b> llegamos hasta aquí
+        \n<b>Fey mu:</b> por (de consecuencia)
+        \n<b>Fey muta:</b> por eso, debido a eso
+        \n<b>Fey mütem:</b> eso no mas
+        \n<b>Fey mew:</b> entonces, después
+        \n<b>Fey nga:</b> eso pues, entonces
+        \n<b>Fente:</b> es tan grande como, así tanto
+        \n<b>Fentren:</b> mucho
+        \n<b>Fem lu:</b> cuando
+        \n<b>Fill:</b> todos, todas
+        \n<b>Inaf:</b> vasto, grande, inmenso
+        \n<b>Ina/ inal:</b> junto a, al lado de, a la orilla de, el último
+        \n<b>Itro:</b> muy, mucho, cierto
+        \n<b>Kafey:</b> también
+        \n<b>Ka/ kangelu/ kakelu:</b> otro
+        \n<b>Ka/ kay:</b> y
+        \n<b>Kisu/ kichu:</b> solo
+        \n<b>Küpa:</b> querer (de voluntad)
+        \n<b>May:</b> Si
+        \n<b>Mew, mu:</b> en, desde, con, sobre, en dirección (siempre va al final de la frase)
+        \n<b>Mütem:</b> no mas, solamente
+        \n<b>Müna:</b> muy, aunque
+        \n<b>Nga:</b> pues
+        \n<b>Ñewelay:</b> no queda mas, no hay mas
+        \n<b>Ñochi:</b> despacio, tranquilo, apacible, lentamente
+        \n<b>Pailla:</b> de espalda, tranquilo
+        \n<b>Piel:</b> disponer, determinar, quere, voluntad, decir
+        \n<b>Ponwitu:</b> adentro
+        \n<b>Pu:</b> adentro, dentro de
+        \n<b>Pütrü/ alü/ wera:</b> abundante, arto, mucho
+        \n<b>Rangiñ:</b> la mitad, el medio
+        \n<b>Re:</b> simple
+        \n<b>Rüf:</b> verdad
+        \n<b>Rüme/ rümeñma:</b> muy (enfatiza)/ aunque
+        \n<b>Upen:</b> olvido, descuido
+        \n<b>Wall:</b> alrededor, lo que esta mas allá
+        \n<b>Welu:</b> pero
+        \n<b>Wüne:</b> primero, adelante
+        \n<b>Wente:</b> sobre, arriba, encima
+        \n<b>Wekun:</b> afuera
+        \n<b>Wüla:</b> después
+        \n<b>Yaf:</b> mas de
+        \n<b>Ya may:</b> esta bien \n
+    </string>
+
+    <!--
+               *** Interrogativos ***
+    -->
+    <string name="TitCatInterrogativos">Interrogativos</string>
+    <string name="TextoInterrogativos"><b>¿Chem?:</b> ¿qué?
+        \n<b>¿Chümüll?:</b> ¿Cuándo?
+        \n<b>¿Chumall?:</b> ¿para que?
+        \n<b>¿Chuchi?:</b> ¿cuál?
+        \n<b>¿Chum?:</b> ¿cómo?
+        \n<b>¿Chew?:</b> ¿dónde?
+        \n<b>¿Iney?:</b> ¿quién?
+        \n<b>¿Tunten?:</b> ¿cuánto(s)?
+        \n\n<b>OTRAS PREGUNTAS</b>
+        \n<b>¿Chem dungu?:</b> ¿que cosa?
+        \n<b>¿Chem ta tüfa?:</b> ¿que es esto?
+        \n<b>¿Chem ta tüfey?:</b> ¿que es eso?
+        \n<b>¿Chemngechi?:</b> ¿que es?
+        \n<b>¿Chem mew?/ ¿chemu?/ ¿chumgelu?:</b> ¿por qué?
+        \n<b>¿Chem duamimi?:</b> ¿qué necesitas?
+        \n<b>¿Chumngechi?:</b> ¿como es?
+        \n<b>¿Chumkeymi?:</b> ¿qué haces?
+        \n<b>¿Chumleymi?:</b> ¿cómo estas?
+        \n<b>¿Chumüll wüñotuaymi?:</b> ¿cuándo vuelves?
+        \n<b>¿Iney akuy?:</b> ¿quién llegó?
+        \n<b>¿Iney pingeymi?:</b> ¿como te llamas?
+        \n<b>¿Chew tuwimi?:</b> ¿de donde vienes? \n
+    </string>
+
+    <!--
+           *** Calendario ***
+    -->
+    <string name="TitCatCalendario">Calendario</string>
+    <string name="TextoCalendario"><i>El calendario Mapuche consta de 13 meses:\n</i>
+        \n<b>1. Kiñe Küyen: </b> del 21 de junio al 18 de julio.
+        \n<b>2. Epu Küyen:</b> del 19 de julio al 15 de agosto.
+        \n<b>3. Küla Küyen:</b> del 16 de agosto al 13 de septiembre.
+        \n<b>4. Meli Küyen:</b> del 14 de septiembre al 11 de octubre.
+        \n<b>5. Kechu Küyen:</b> del 12 de octubre al 08 de noviembre.
+        \n<b>6. Cayu Küyen:</b> del 09 de noviembre al 06 de diciembre.
+        \n<b>7. Regle Küyen:</b> del 07 de diciembre al 03 de enero.
+        \n<b>8. Purra Küyen:</b> del 04 de enero al 01 de febrero.
+        \n<b>9. Ailla Küyen:</b> del 02 de febrero al 29 de febrero.
+        \n<b>10. Mari Küyen:</b> del 01 de marzo al 28 de marzo.
+        \n<b>11. Mari Kiñe Küyen:</b> del 29 de marzo al 25 de abril.
+        \n<b>12. Mari Epu Küyen:</b> del 26 de abril al 23 de mayo.
+        \n<b>13. Mari Küla Küyen:</b> del 24 de mayo al 20 de junio.
+        \n<b>Wetripantu</b> (año nuevo)
+        \n\n<b>ESTACIONES</b>
+        \n<b>Pukem:</b> invierno
+        \n<b>Pewu:</b> primavera
+        \n<b>Walüng:</b> verano
+        \n<b>Rimü:</b> otoño \n
+    </string>
+    <string name="btn_pronunciacion">Pronunciación</string>
+    <string name="btn_pronombres">Pronombres</string>
+    <string name="btn_saludo">Saludo y despedida</string>
+    <string name="btn_interrogativos">Interrogativos</string>
+    <string name="btn_conectores">Frases comunes</string>
+    <string name="btn_numeros">Números</string>
+    <string name="btn_calendario">Calendario</string>
+    <string name="btn_promun">Pronunciación</string>
+    <string name="btn_pronom">Pronombres</string>
+    <string name="btn_saldesp">Saludo y despedida</string>
+    <string name="btn_interrog">Interrogativos</string>
+    <string name="btn_A">A</string>
+    <string name="img_center_banner">imagen central modo land</string>
+    <string name="bnt_informacion">Información</string>
+    <string name="imageButton">boton con imagen</string>
+    <string name="imagen_info">lukutuwe</string>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="elevacion_app_bar">4dp</dimen>
+    <dimen name="margen_boton_flotante">10dp</dimen>
+    <dimen name="elevacion_boton_flotante">6dp</dimen>
+    <dimen name="tamano_texto_boton">14pt</dimen>
+    <dimen name="margen_sup_boton">20dp</dimen>
+    <dimen name="ancho_boton">320dp</dimen>
+    <dimen name="ancho_boton_categorias">350dp</dimen>
+    <dimen name="ancho_boton_abc">150dp</dimen>
+    <dimen name="margen_izq_boton">10dp</dimen>
+    <dimen name="margen_inf_boton">10dp</dimen>
+    <dimen name="tamano_texto_informacion">17sp</dimen>
+    <dimen name="tamano_texto_mensajes">17sp</dimen>
+    <dimen name="tamano_titulo">45sp</dimen>
+    <dimen name="tamano_text_todocat">20sp</dimen>
+    <dimen name="margen_izq_texto">15dp</dimen>
+    <dimen name="tamano_texto_todocat">20sp</dimen>
+    <dimen name="margen_sup_texto">10dp</dimen>
+    <dimen name="margen_izq_listv">15dp</dimen>
+    <dimen name="margen_sup_listv">10dp</dimen>
+    <dimen name="tamano_texto_botonland">12pt</dimen>
+
+</resources>

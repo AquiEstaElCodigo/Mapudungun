@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Abc_Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_banner_top"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/banner_land" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_act_abecedario"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal|center"
+                android:textSize="@dimen/tamano_titulo"/>
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@string/img_center_banner"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/banner_lat_land" />
+
+        </FrameLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:background="@drawable/redondear_boton"
+                    android:onClick="mostrarPalabras"
+                    android:text="@string/btn_A"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="B"
+                    android:id="@+id/btn_B"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="C"
+                    android:id="@+id/btn_C"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="D"
+                    android:id="@+id/btn_D"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="E"
+                    android:id="@+id/btn_E"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="F"
+                    android:id="@+id/btn_F"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="G"
+                    android:id="@+id/btn_G"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="H"
+                    android:id="@+id/btn_H"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="I"
+                    android:id="@+id/btn_I"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="J"
+                    android:id="@+id/btn_J"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="K"
+                    android:id="@+id/btn_K"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="palabrasNoDisponibles"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="L"
+                    android:id="@+id/btn_L"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="M"
+                    android:id="@+id/btn_M"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="N"
+                    android:id="@+id/btn_N"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="Ñ"
+                    android:id="@+id/btn_Ñ"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="palabrasNoDisponibles"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="O"
+                    android:id="@+id/btn_O"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="P"
+                    android:id="@+id/btn_P"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="Q"
+                    android:id="@+id/btn_Q"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="R"
+                    android:id="@+id/btn_R"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="S"
+                    android:id="@+id/btn_S"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="T"
+                    android:id="@+id/btn_T"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="U"
+                    android:id="@+id/btn_U"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="V"
+                    android:id="@+id/btn_V"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="W"
+                    android:id="@+id/btn_W"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="palabrasNoDisponibles"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="X"
+                    android:id="@+id/btn_X"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="palabrasNoDisponibles"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="Y"
+                    android:id="@+id/btn_Y"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redondear_boton"
+                    android:text="Z"
+                    android:id="@+id/btn_Z"
+                    android:textColor="@color/ColorTextoBoton"
+                    android:textSize="@dimen/tamano_texto_boton"
+                    android:layout_marginTop="@dimen/margen_sup_boton"
+                    android:width="@dimen/ancho_boton_abc"
+                    android:layout_marginStart="@dimen/margen_izq_boton"
+                    android:onClick="mostrarPalabras"
+                    android:layout_marginBottom="@dimen/margen_inf_boton" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+  </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

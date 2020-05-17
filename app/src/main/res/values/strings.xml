@@ -26,18 +26,8 @@
         \n<b>8 Pura: </b> ocho
         \n<b>9 Aylla: </b> nueve
         \n<b>10 Mari: </b> diez
-        \n<b>11 Mari kiñe: </b> once
-        \n<b>12 Mari epu: </b> doce
-        \n<b>20 Epu mari: </b> veinte
-        \n<b>21 Epu mari kiñe: </b> veintiuno
-        \n<b>25 Epu mari kechu: </b> veinticinco
-        \n<b>40 Meli mari: </b> cuarenta
-        \n<b>70 Regle mari: </b> setenta
         \n<b>100 Pataka: </b> cien
-        \n<b>120 Kiñe pataka epu mari: </b> ciento veinte
-        \n<b>850 Pura pataka kechu mari: </b> ochocientos cincuenta
         \n<b>1000 Waranga: </b> mil
-        \n<b>2000 Epu waranga: </b> dos mil \n
     </string>
 
     <!--
@@ -144,7 +134,7 @@
     </string>
 
     <!--
-               *** Conectores Gramaticales ***
+               *** Frases comunes ***
     -->
     <string name="TitCatFrases">Frases comunes</string>
     <string name="TextoConectores"><b>RELACIONADOS AL TIEMPO</b>
@@ -304,6 +294,8 @@
     <string name="imagen_info">lukutuwe</string>
     <string name="logo_splash">logoSplash</string>
     <string name="mapudung_splash">Mapudungún</string>
+    <string name="resultado">Resultado</string>
+    <string name="ingrese_un_n_mero">ingrese un número</string>
 
 
 </resources>

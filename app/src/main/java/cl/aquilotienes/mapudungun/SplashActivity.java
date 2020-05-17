@@ -8,11 +8,14 @@ import android.os.Handler;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private AdministradorBD administradorBD;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        administradorBD = new AdministradorBD(this);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -10,14 +10,6 @@
     android:background="@color/backgroundSplash"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/mapudung_splash"
-        android:textSize="50sp"
-
-        android:textColor="@color/ColorTextoBoton"/>
 
     <ImageView
         android:id="@+id/img_splash"

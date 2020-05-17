@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
 {
 
     private Button btn_diccionario, btn_categorias, btn_informacion;
-    private AdministradorBD administradorBD;
+
     private AlertDialog.Builder builder;
     private LayoutInflater inflater;
     private Toolbar toolbar;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity
         btn_categorias  = (Button) findViewById(R.id.btn_categorias);
         btn_informacion  = (Button) findViewById(R.id.btnInformacion);
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        administradorBD = new AdministradorBD(this);
+
     }
 
     public void ejecutarBotonesMain(View view)

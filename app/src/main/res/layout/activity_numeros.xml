@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,8 +11,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
@@ -25,12 +24,12 @@
             android:src="@mipmap/banner" />
 
         <TextView
+            android:id="@+id/tv_tituloCategorias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
             android:text="@string/TitCatNum"
-            android:id="@+id/tv_tituloCategorias"
-            android:textSize="@dimen/tamano_titulo"
-            android:layout_gravity="center_horizontal|center" />
+            android:textSize="@dimen/tamano_titulo" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -46,8 +45,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,37 +62,54 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/TextoNumeros"/>
+                    android:text="@string/TextoNumeros" />
 
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-
-                <EditText
-                    android:id="@+id/etNumeros"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:maxLength="6"
-                    android:inputType="numberSigned"
-                    android:hint="@string/ingrese_un_n_mero"
-                    android:textSize="40sp"/>
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btnNumeros"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ver"
-                    android:textSize="30sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texto_sup_numeros"/>
 
-                <TextView
-                    android:id="@+id/tvResultadoNumeros"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/resultado"
-                    android:gravity="center"
-                    android:textSize="40sp"/>
+                    <EditText
+                        android:id="@+id/etNumeros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/ingrese_un_n_mero"
+                        android:inputType="numberSigned"
+                        android:singleLine="true"
+                        android:maxLength="6"
+                        android:textSize="40sp"
+                        android:autofillHints="" />
+
+                    <Button
+                        android:id="@+id/btnNumeros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultadoNumeros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/resultado"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>

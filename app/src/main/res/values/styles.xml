@@ -8,6 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="estilo_btn_categorias">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margen_izq_boton</item>
+        <item name="android:layout_marginTop">@dimen/margen_sup_boton</item>
+        <item name="android:width">@dimen/ancho_boton_categorias</item>
+        <item name="android:background">@drawable/redondear_boton_categorias</item>
+        <item name="android:textColor">@color/ColorTextoBoton</item>
+        <item name="android:textSize">@dimen/tamano_texto_boton</item>
+    </style>
 
 
 </resources>

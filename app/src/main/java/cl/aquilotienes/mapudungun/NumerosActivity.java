@@ -46,6 +46,9 @@ public class NumerosActivity extends AppCompatActivity {
 
         btnNumeros = (Button) findViewById(R.id.btnNumeros);
         etNumeros = (EditText) findViewById(R.id.etNumeros);
+
+        etNumeros.isFocusable();
+
         tvResultadoNumeros = (TextView) findViewById(R.id.tvResultadoNumeros);
 
 
@@ -75,6 +78,8 @@ public class NumerosActivity extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 

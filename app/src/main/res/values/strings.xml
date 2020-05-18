@@ -296,6 +296,8 @@
     <string name="mapudung_splash">Mapudungún</string>
     <string name="resultado">Resultado</string>
     <string name="ingrese_un_n_mero">ingrese un número</string>
+    <string name="ver">"Ver resultado "</string>
+    <string name="texto_sup_numeros">Tambien puedes ingresar un número para saber como es en Mapudungún</string>
 
 
 </resources>

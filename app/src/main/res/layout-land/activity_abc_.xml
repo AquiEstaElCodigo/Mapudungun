@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         android:src="@mipmap/banner_land" />
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,16 +27,16 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/titulo_act_abecedario"
-                android:id="@+id/textView3"
                 android:layout_gravity="center_horizontal|center"
-                android:textSize="@dimen/tamano_titulo"/>
+                android:text="@string/titulo_act_abecedario"
+                android:textSize="@dimen/tamano_titulo" />
 
 
             <ImageView
@@ -52,466 +50,267 @@
 
         </FrameLayout>
 
-  <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_weight="1">
-
-
-        <TableLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-            <TableRow
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_A"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:background="@drawable/redondear_boton"
-                    android:onClick="mostrarPalabras"
-                    android:text="@string/btn_A"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="B"
-                    android:id="@+id/btn_B"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-
-
-                    />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="C"
-                    android:id="@+id/btn_C"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-                    />
+                    android:layout_height="wrap_content">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="D"
-                    android:id="@+id/btn_D"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
+                    <Button
+                        android:id="@+id/btn_A"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/a" />
 
-                    />
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_B"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/b" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="E"
-                    android:id="@+id/btn_E"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-                    />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="F"
-                    android:id="@+id/btn_F"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-                    />
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_C"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/c" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btn_D"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/d" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="G"
-                    android:id="@+id/btn_G"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-                    />
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="H"
-                    android:id="@+id/btn_H"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_E"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/e" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btn_F"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/f" />
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="I"
-                    android:id="@+id/btn_I"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="J"
-                    android:id="@+id/btn_J"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_G"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/g" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_H"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/h" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="K"
-                    android:id="@+id/btn_K"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="palabrasNoDisponibles"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="L"
-                    android:id="@+id/btn_L"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_I"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/i" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_J"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/j" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="M"
-                    android:id="@+id/btn_M"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="N"
-                    android:id="@+id/btn_N"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_K"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="palabrasNoDisponibles"
+                        android:text="@string/k" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_L"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/l" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="Ñ"
-                    android:id="@+id/btn_Ñ"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="palabrasNoDisponibles"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="O"
-                    android:id="@+id/btn_O"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_M"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/m" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_N"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/n" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="P"
-                    android:id="@+id/btn_P"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="Q"
-                    android:id="@+id/btn_Q"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_Ñ"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="palabrasNoDisponibles"
+                        android:text="@string/ene" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_O"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/o" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="R"
-                    android:id="@+id/btn_R"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="S"
-                    android:id="@+id/btn_S"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_P"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/p" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_Q"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/q" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="T"
-                    android:id="@+id/btn_T"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="U"
-                    android:id="@+id/btn_U"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_R"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/r" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_S"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/s" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="V"
-                    android:id="@+id/btn_V"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="W"
-                    android:id="@+id/btn_W"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="palabrasNoDisponibles"/>
+                    <Button
+                        android:id="@+id/btn_T"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/t" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_U"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/u" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="X"
-                    android:id="@+id/btn_X"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="palabrasNoDisponibles"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="Y"
-                    android:id="@+id/btn_Y"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"/>
+                    <Button
+                        android:id="@+id/btn_V"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/v" />
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_W"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="palabrasNoDisponibles"
+                        android:text="@string/w" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/redondear_boton"
-                    android:text="Z"
-                    android:id="@+id/btn_Z"
-                    android:textColor="@color/ColorTextoBoton"
-                    android:textSize="@dimen/tamano_texto_boton"
-                    android:layout_marginTop="@dimen/margen_sup_boton"
-                    android:width="@dimen/ancho_boton_abc"
-                    android:layout_marginStart="@dimen/margen_izq_boton"
-                    android:onClick="mostrarPalabras"
-                    android:layout_marginBottom="@dimen/margen_inf_boton" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            </TableRow>
+                    <Button
+                        android:id="@+id/btn_X"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="palabrasNoDisponibles"
+                        android:text="@string/x" />
 
-        </TableLayout>
+                    <Button
+                        android:id="@+id/btn_Y"
+                        style="@style/estilo_btn_diccionario"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/y" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_Z"
+                        style="@style/estilo_btn_diccionario_letraz"
+                        android:layout_marginBottom="@dimen/margen_sup_boton"
+                        android:onClick="mostrarPalabras"
+                        android:text="@string/z" />
 
 
-  </ScrollView>
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 

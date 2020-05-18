@@ -19,5 +19,27 @@
         <item name="android:textSize">@dimen/tamano_texto_boton</item>
     </style>
 
+    <style name="estilo_btn_diccionario">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/redondear_boton</item>
+        <item name="android:textColor">@color/ColorTextoBoton</item>
+        <item name="android:textSize">@dimen/tamano_texto_boton</item>
+        <item name="android:layout_marginTop">@dimen/margen_sup_boton</item>
+        <item name="android:width">@dimen/ancho_boton_abc</item>
+        <item name="android:layout_marginLeft">@dimen/margen_izq_boton</item>
+    </style>
+
+    <style name="estilo_btn_diccionario_letraz">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/redondear_boton</item>
+        <item name="android:textColor">@color/ColorTextoBoton</item>
+        <item name="android:textSize">@dimen/tamano_texto_boton</item>
+        <item name="android:layout_marginTop">@dimen/margen_sup_boton</item>
+        <item name="android:width">@dimen/ancho_boton_abc</item>
+        <item name="android:layout_marginLeft">@dimen/margen_izq_boton</item>
+    </style>
+
 
 </resources>

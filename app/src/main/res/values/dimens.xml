@@ -22,5 +22,6 @@
     <dimen name="margen_izq_listv">15dp</dimen>
     <dimen name="margen_sup_listv">10dp</dimen>
     <dimen name="tamano_texto_botonland">12pt</dimen>
+    <dimen name="peso_boton_diccionatio">0.5</dimen>
 
 </resources>

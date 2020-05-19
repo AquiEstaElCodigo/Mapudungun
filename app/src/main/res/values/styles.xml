@@ -41,5 +41,27 @@
         <item name="android:layout_marginLeft">@dimen/margen_izq_boton</item>
     </style>
 
+    <style name="estilo_titulos">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/tamano_titulo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="estilo_listview">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/color_titulos</item>
+        <item name="android:textSize">@dimen/tamano_texto_listview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="estilo_texto_todocat">
+        <item name="android:layout_marginStart">@dimen/margen_izq_texto</item>
+        <item name="android:layout_marginTop">@dimen/margen_sup_texto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/color_texto_todocat</item>
+        <item name="android:textSize">@dimen/tamano_texto_todocat</item>
+    </style>
+
 
 </resources>

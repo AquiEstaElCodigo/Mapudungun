@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,8 +25,8 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -39,62 +38,63 @@
                 android:src="@mipmap/banner_lat_land" />
 
             <TextView
+                android:id="@+id/textView4"
+                style="@style/estilo_titulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/titulo_act_principal"
-                android:id="@+id/textView4"
                 android:layout_gravity="center"
+                android:text="@string/titulo_act_principal"
                 android:textSize="@dimen/tamano_titulo" />
 
         </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/boton_diccionario"
-            android:background="@drawable/redondear_boton"
-            android:id="@+id/btn_diccionario"
-            android:textColor="@color/ColorTextoBoton"
-            android:textSize="@dimen/tamano_texto_boton"
-            android:layout_marginTop="@dimen/margen_sup_boton"
-            android:layout_gravity="center_horizontal|top"
-            android:width="@dimen/ancho_boton"
-            android:onClick="ejecutarBotonesMain" />
+            <Button
+                android:id="@+id/btn_diccionario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="@dimen/margen_sup_boton"
+                android:width="@dimen/ancho_boton"
+                android:background="@drawable/redondear_boton"
+                android:onClick="ejecutarBotonesMain"
+                android:text="@string/boton_diccionario"
+                android:textColor="@color/ColorTextoBoton"
+                android:textSize="@dimen/tamano_texto_boton" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/boton_categorias"
-            android:background="@drawable/redondear_boton_categorias"
-            android:id="@+id/btn_categorias"
-            android:textColor="@color/ColorTextoBoton"
-            android:layout_marginTop="@dimen/margen_sup_boton"
-            android:textSize="@dimen/tamano_texto_boton"
-            android:width="@dimen/ancho_boton"
-            android:layout_gravity="center"
-            android:onClick="ejecutarBotonesMain" />
+            <Button
+                android:id="@+id/btn_categorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margen_sup_boton"
+                android:width="@dimen/ancho_boton"
+                android:background="@drawable/redondear_boton_categorias"
+                android:onClick="ejecutarBotonesMain"
+                android:text="@string/boton_categorias"
+                android:textColor="@color/ColorTextoBoton"
+                android:textSize="@dimen/tamano_texto_boton" />
 
-        <Button
-            android:id="@+id/btnInformacion"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|bottom"
-            android:contentDescription="@string/imageButton"
-            android:drawableStart="@mipmap/logo_btn_info"
-            android:onClick="ejecutarBotonesMain"
-            android:scaleType="fitEnd"
-            android:text="@string/bnt_informacion"
-            android:textSize="@dimen/tamano_texto_boton" />
+            <Button
+                android:id="@+id/btnInformacion"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:contentDescription="@string/imageButton"
+                android:drawableStart="@mipmap/logo_btn_info"
+                android:onClick="ejecutarBotonesMain"
+                android:scaleType="fitEnd"
+                android:text="@string/bnt_informacion"
+                android:textSize="@dimen/tamano_texto_boton" />
 
-    </FrameLayout>
+        </FrameLayout>
     </LinearLayout>
 
 </LinearLayout>

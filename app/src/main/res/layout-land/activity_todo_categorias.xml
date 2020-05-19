@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,8 +27,8 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
 
             <ImageView
@@ -42,38 +41,38 @@
                 android:src="@mipmap/banner_lat_land" />
 
             <TextView
+                android:id="@+id/tv_TituloTodoCat"
+                style="@style/estilo_titulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_TituloTodoCat"
-                android:textSize="@dimen/tamano_titulo"
-                android:layout_gravity="center_horizontal|center" />
-
+                android:layout_gravity="center_horizontal|center"
+                android:textSize="@dimen/tamano_titulo" />
 
 
         </FrameLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_weight="1">
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_TextoTodoCat"
+                    style="@style/estilo_texto_todocat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_TextoTodoCat"
-                    android:textSize="@dimen/tamano_texto_todocat"
                     android:layout_marginStart="@dimen/margen_izq_texto"
-                    android:layout_marginTop="@dimen/margen_sup_texto" />
+                    android:layout_marginTop="@dimen/margen_sup_texto"
+                    android:textSize="@dimen/tamano_texto_todocat" />
 
-
-    </LinearLayout>
-    </ScrollView>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </LinearLayout>

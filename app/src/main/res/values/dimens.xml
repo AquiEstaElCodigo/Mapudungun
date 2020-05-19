@@ -5,7 +5,7 @@
     <dimen name="elevacion_app_bar">4dp</dimen>
     <dimen name="margen_boton_flotante">10dp</dimen>
     <dimen name="elevacion_boton_flotante">6dp</dimen>
-    <dimen name="tamano_texto_boton">14pt</dimen>
+    <dimen name="tamano_texto_boton">20sp</dimen>
     <dimen name="margen_sup_boton">20dp</dimen>
     <dimen name="ancho_boton">320dp</dimen>
     <dimen name="ancho_boton_categorias">350dp</dimen>
@@ -21,7 +21,8 @@
     <dimen name="margen_sup_texto">10dp</dimen>
     <dimen name="margen_izq_listv">15dp</dimen>
     <dimen name="margen_sup_listv">10dp</dimen>
-    <dimen name="tamano_texto_botonland">12pt</dimen>
+    <dimen name="tamano_texto_botonland">12sp</dimen>
     <dimen name="peso_boton_diccionatio">0.5</dimen>
+    <dimen name="tamano_texto_listview">20sp</dimen>
 
 </resources>

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Mapudungún</string>
     <string name="boton_diccionario">Diccionario</string>
-    <string name="boton_categorias">Categorias</string>
+    <string name="boton_categorias">Categorías</string>
     <string name="titulo_act_principal">Mapudungún</string>
-    <string name="titulo_act_categorias">Categorias</string>
+    <string name="titulo_act_categorias">Categorías</string>
     <string name="titulo_act_abecedario">Diccionario</string>
     <string name="sub_tit_act_abecedario">letra</string>
     <string name="img_banner_top">imagenBannerTop</string>

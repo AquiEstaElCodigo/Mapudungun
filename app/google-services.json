@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691029246393",
+    "firebase_url": "https://ejemploweb-71c03.firebaseio.com",
+    "project_id": "ejemploweb-71c03",
+    "storage_bucket": "ejemploweb-71c03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691029246393:android:249d9c07dfd1a0b42bb668",
+        "android_client_info": {
+          "package_name": "cl.aquilotienes.mapudungun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691029246393-rti5lsf9vokquma017722os5ps17md9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkmSkdmZz8fSxYuHRJbqooBvxznFr39Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691029246393-rti5lsf9vokquma017722os5ps17md9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

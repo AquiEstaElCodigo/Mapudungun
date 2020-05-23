@@ -297,7 +297,7 @@
     <string name="resultado">Resultado</string>
     <string name="ingrese_un_n_mero">ingrese un número</string>
     <string name="ver">"Ver resultado "</string>
-    <string name="texto_sup_numeros">También puedes ingresar un número para saber como es en Mapudungún</string>
+    <string name="texto_sup_numeros">También puedes ingresar un número para saber como es en Mapudungún:</string>
     <string name="banner_sup">banner superior</string>
     <string name="banner_central">Banner central</string>
     <string name="a">A</string>

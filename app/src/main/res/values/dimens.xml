@@ -24,5 +24,7 @@
     <dimen name="tamano_texto_botonland">12sp</dimen>
     <dimen name="peso_boton_diccionatio">0.5</dimen>
     <dimen name="tamano_texto_listview">20sp</dimen>
+    <dimen name="tamano_texto_etnumeros">20sp</dimen>
+    <dimen name="margen_inferior_texto">40dp</dimen>
 
 </resources>

@@ -2,8 +2,10 @@ package cl.aquilotienes.mapudungun;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,6 +29,7 @@ public class NumerosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
 
+        cerrarTeclado();
         resultado = "";
         numeros = new HashMap<Integer, String>();
 
@@ -43,14 +46,9 @@ public class NumerosActivity extends AppCompatActivity {
         numeros.put(100, "Pataka");
         numeros.put(1000, "Waranga");
 
-
         btnNumeros = (Button) findViewById(R.id.btnNumeros);
         etNumeros = (EditText) findViewById(R.id.etNumeros);
-
-        etNumeros.isFocusable();
-
         tvResultadoNumeros = (TextView) findViewById(R.id.tvResultadoNumeros);
-
 
         btnNumeros.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,12 +73,19 @@ public class NumerosActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
 
-
             }
         });
 
 
+    }
 
+    private void cerrarTeclado() {
+        View view = this.getCurrentFocus();
+        if(view != null){
+            InputMethodManager imm =
+                    (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
 
@@ -377,7 +382,6 @@ public class NumerosActivity extends AppCompatActivity {
     private void limpiarResultado(){
         resultado = "";
     }
-
 
 
 }//.

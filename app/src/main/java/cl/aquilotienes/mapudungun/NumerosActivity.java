@@ -19,7 +19,6 @@ import android.os.Bundle;
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * Created by Germán Riveros S.
  */
@@ -27,7 +26,6 @@ import java.util.Map;
 
 public class NumerosActivity extends AppCompatActivity
 {
-
     Button btnNumeros;
     TextView tvResultadoNumeros;
     EditText etNumeros;
@@ -35,9 +33,9 @@ public class NumerosActivity extends AppCompatActivity
     Map<Integer, String> numeros;
     final String MENSAJE_ERROR = "Ingrese un número entre 1 y 999999";
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -86,11 +84,10 @@ public class NumerosActivity extends AppCompatActivity
                 }
             }
         });
-
     }
 
-
-    private void transformacionDeNumeros(int num){
+    private void transformacionDeNumeros(int num)
+    {
 
         String cadena = Integer.toString(num);
         char[] caracter = cadena.toCharArray();
@@ -153,7 +150,6 @@ public class NumerosActivity extends AppCompatActivity
                 tvResultadoNumeros.setText(MENSAJE_ERROR);
                 break;
         }
-
     }
 
     public String dosDigitos(int[] digito)
@@ -331,6 +327,5 @@ public class NumerosActivity extends AppCompatActivity
     {
         resultado = "";
     }
-
 
 }

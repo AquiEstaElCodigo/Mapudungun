@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CategoriasActivity">
+    tools:context=".NumerosActivity">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,8 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center"
-                android:text="@string/titulo_act_categorias"
-                android:textSize="@dimen/tamano_titulo" />
+                android:text="@string/TitCatNum" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -47,6 +47,8 @@
                 android:scaleType="fitEnd"
                 android:src="@mipmap/banner_lat_land" />
         </FrameLayout>
+
+
 
 
         <ScrollView
@@ -60,59 +62,40 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_pronunciacion"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="1"
-                    android:text="@string/btn_promun" />
+                <TextView
+                    style="@style/estilo_texto_todocat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TextoNumeros" />
+
+                <TextView
+                    style="@style/estilo_texto_todocat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_sup_numeros" />
+
+                <EditText
+                    android:id="@+id/etNumeros"
+                    style="@style/estilo_et_numeros"
+                    android:autofillHints=""
+                    android:descendantFocusability="blocksDescendants"
+                    android:hint="@string/ingrese_un_n_mero" />
 
                 <Button
-                    android:id="@+id/btn_pronombres"
+                    android:id="@+id/btnNumeros"
                     style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="2"
-                    android:text="@string/btn_pronom" />
+                    android:layout_gravity="center"
+                    android:text="@string/ver" />
 
-
-                <Button
-                    android:id="@+id/btn_saludos"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="3"
-                    android:text="@string/btn_saldesp" />
-
-                <Button
-                    android:id="@+id/btn_interrogativos"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="4"
-                    android:text="@string/btn_interrog" />
-
-                <Button
-                    android:id="@+id/btn_frases"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="5"
-                    android:text="@string/btn_conectores" />
-
-                <Button
-                    android:id="@+id/btn_numeros"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="6"
-                    android:text="@string/btn_numeros" />
-
-                <Button
-                    android:id="@+id/btn_calendario"
-                    style="@style/estilo_btn_categorias"
-                    android:onClick="ejecutarBotonesCategorias"
-                    android:tag="7"
-                    android:text="@string/btn_calendario" />
+                <TextView
+                    android:id="@+id/tvResultadoNumeros"
+                    style="@style/texto_resultado_numeros"
+                    android:text="@string/resultado" />
 
             </LinearLayout>
 
         </ScrollView>
 
     </LinearLayout>
+
 </LinearLayout>

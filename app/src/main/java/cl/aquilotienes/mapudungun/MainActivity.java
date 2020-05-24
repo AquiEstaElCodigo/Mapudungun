@@ -10,11 +10,10 @@ package cl.aquilotienes.mapudungun;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
-import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.view.LayoutInflater;
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.widget.Button;
 import android.os.Bundle;
 import android.view.View;

@@ -9,7 +9,14 @@
     <string name="img_banner_top">imagenBannerTop</string>
     <string name="img_banner_bottom">imagenBannerBottom</string>
     <string name="texto_mensajes">No existen palabras con esta letra\n</string>
-    <string name="info_texto">Desarrollado por: <b> Germán Riveros Sepúlveda. </b> \n</string>
+
+    <!--
+          *** Información ***
+   -->
+
+    <string name="info_texto">
+        Desarrollado por: <b> Germán Riveros Sepúlveda. </b> \n
+    </string>
 
     <!--
            *** Números ***

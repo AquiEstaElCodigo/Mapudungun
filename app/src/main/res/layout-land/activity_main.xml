@@ -28,6 +28,30 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <fragment
+                    android:id="@+id/fragment_ads"
+                    android:name="cl.aquilotienes.mapudungun.AdsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_ads" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_principal"
+                    style="@style/estilo_titulos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/titulo_act_principal"/>
+
+            </LinearLayout>
+
+            
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
@@ -37,14 +61,7 @@
                 android:scaleType="fitEnd"
                 android:src="@mipmap/banner_lat_land" />
 
-            <TextView
-                android:id="@+id/textView4"
-                style="@style/estilo_titulos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/titulo_act_principal"
-                android:textSize="@dimen/tamano_titulo" />
+
 
         </FrameLayout>
 

@@ -72,10 +72,11 @@ public class TodoCategoriasActivity extends AppCompatActivity
                 tv_TextoTodoCat.setText(getText(R.string.TextoConectores));
                 break;
 
+                /*
             case 6:
                 tv_TituloTodoCat.setText(getText(R.string.TitCatNum));
                 tv_TextoTodoCat.setText(getText(R.string.TextoNumeros));
-                break;
+                break; */
 
             case 7:
                 tv_TituloTodoCat.setText(getText(R.string.TitCatCalendario));

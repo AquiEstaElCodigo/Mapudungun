@@ -1,20 +1,32 @@
+/**
+ *
+ * Esta obra está sujeta a la licencia Reconocimiento-NoComercial-CompartirIgual
+ * 4.0 Internacional de Creative Commons. Para ver una copia de esta licencia,
+ * visite http://creativecommons.org/licenses/by-nc-sa/4.0/.
+ *
+ */
+
 package cl.aquilotienes.mapudungun;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
-import android.os.Bundle;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toast;
-
+import android.view.View;
+import android.os.Bundle;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NumerosActivity extends AppCompatActivity {
+
+/**
+ * Created by Germán Riveros S.
+ */
+
+
+public class NumerosActivity extends AppCompatActivity
+{
 
     Button btnNumeros;
     TextView tvResultadoNumeros;
@@ -28,8 +40,8 @@ public class NumerosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        cerrarTeclado();
         resultado = "";
         numeros = new HashMap<Integer, String>();
 
@@ -50,10 +62,11 @@ public class NumerosActivity extends AppCompatActivity {
         etNumeros = (EditText) findViewById(R.id.etNumeros);
         tvResultadoNumeros = (TextView) findViewById(R.id.tvResultadoNumeros);
 
-        btnNumeros.setOnClickListener(new View.OnClickListener() {
+        btnNumeros.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View v)
+            {
                 try{
                     int num = Integer.parseInt(etNumeros.getText().toString());
 
@@ -63,7 +76,6 @@ public class NumerosActivity extends AppCompatActivity {
                         tvResultadoNumeros.setText(MENSAJE_ERROR);
                     else
                         transformacionDeNumeros(num);
-
                 }
                 catch (NumberFormatException nfe){
                     tvResultadoNumeros.setText(MENSAJE_ERROR);
@@ -72,20 +84,9 @@ public class NumerosActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Error: " + e.toString(),
                             Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 
-
-    }
-
-    private void cerrarTeclado() {
-        View view = this.getCurrentFocus();
-        if(view != null){
-            InputMethodManager imm =
-                    (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        }
     }
 
 
@@ -155,162 +156,125 @@ public class NumerosActivity extends AppCompatActivity {
 
     }
 
-    public String dosDigitos(int[] digito){
-
-        //10
+    public String dosDigitos(int[] digito)
+    {
         if(digito[0] == 1 && digito[1] == 0)
             resultado = numeros.get(10);
 
-        //11, 12, 13, 14, 15, 16, 17, 18, 19
         if(digito[0] == 1 && digito[1] != 0)
             resultado = "Mari " + numeros.get(digito[1]);
 
-        //20, 30, 40, 50, 60, 70, 80, 90
         if(digito[0] != 0 && digito[0] != 1 && digito[1] == 0)
             resultado = numeros.get(digito[0]) + " Mari";
 
-        //21, 22, 23, 24, 25, 26, 27, 28, 29 = 30, 40, 50, 60, 70, 80
         if(digito[0] != 0 && digito[0] != 1 && digito[1] != 0)
             resultado = numeros.get(digito[0]) + " Mari " + numeros.get(digito[1]);
 
         return resultado;
+    }
 
-    }//fin método dosDigitos
-
-    public String tresDigitos(int[] digito){
-
-        //100
+    public String tresDigitos(int[] digito)
+    {
         if(digito[0] == 1 && digito[1] == 0 && digito[2] == 0)
             resultado = numeros.get(100);
 
-        //101
         if(digito[0] == 1 && digito[1] == 0 && digito[2] == 1)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[2]);
 
-        //200, 300, 400, 500, 600, 700, 800, 900
         if(digito[0] != 0 && digito[0] != 1 && digito[1] == 0 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka";
 
-        //201, 202, 203, 204, 205, 206, 207, 208, 209 = 300, 400, 500, 600...
         if(digito[0] != 0 && digito[0] != 1 && digito[1] == 0 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[2]);
 
-        //110, 210, 310, 410, 510, 610, 710, 810, 910
         if(digito[0] != 0 && digito[1] == 1 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka Mari";
 
-        //111, 112, 113, 114, 115, 116, 117, 118, 119 = 200, 300, 400, 500...
         if(digito[0] != 0 && digito[1] == 1 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka Mari " + numeros.get(digito[2]);
 
-        //120, 130, 140, 150, 160, 170, 180, 190 = 200, 300, 400, 500...
         if(digito[0] != 0 && digito[1] != 1 && digito[1] != 0 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[1]) + " Mari";
 
-        //todas las combinaciones
         if(digito[0] != 0 && digito[1] != 0 && digito[1] != 1 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[1]) + " Mari "
                     + numeros.get(digito[2]);
 
         return resultado;
-
-    }//fin método tresDigitos
+    }
 
 
     public String cuatroDigitos(int[] digito)
     {
-        //1000
         if(digito[0] == 1)
             resultado = " Waranga " + complementoDigitos(digito[1], digito[2], digito[3]);
 
-        //2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000
         if(digito[0] != 1)
             resultado = numeros.get(digito[0]) + " Waranga "
                     + complementoDigitos(digito[1], digito[2], digito[3]);
 
         return resultado;
-
-    }//fin método cuatroDigitos
+    }
 
 
     private String cincoDigitos(int[] digito)
     {
-
-        //10.000
         if(digito[0] == 1 && digito[1] == 0)
             resultado = numeros.get(10) + " " + numeros.get(1000) + " " +
                     complementoDigitos(digito[2], digito[3],digito[4]);
 
-        //11.000, 12.000, 13.000, 14.000, 15.000, 16.000, 17.000, 18.000, 19.000
         if(digito[0] == 1 && digito[1] != 0 )
             resultado = "Mari " + numeros.get(digito[1]) + " Waranga " + " " +
                     complementoDigitos(digito[2], digito[3], digito[4]);
 
-        //20.000, 30.000, 40.000, 50.000, 60.000, 70.000, 80.000, 90.000
         if (digito[0] != 1 && digito[1] == 0)
             resultado = numeros.get(digito[0]) + " Mari Waranga " + " "
                     + complementoDigitos(digito[2], digito[3], digito[4]);
 
-        //21.000, 22.000, 23.000, 24.000, 25.000, 26.000, 27.000, 28.000, 29.000 = 30.000, 40.000...
         if(digito[0] != 1 && digito[1] !=0)
             resultado = numeros.get(digito[0]) + " Mari " + numeros.get(digito[1]) + " Waranga "
                     + " " + complementoDigitos(digito[2], digito[3], digito[4]);
 
-
         return resultado;
-    }//fin método cincoDigitos
+    }
 
 
     private String seisDigitos(int[] digito)
     {
         resultado = "";
 
-        //100
         if(digito[0] == 1 && digito[1] == 0 && digito[2] == 0)
             resultado = numeros.get(100) + " Waranga" +
                     complementoDigitos(digito[3], digito[4], digito[5]);
 
-        //101
         if(digito[0] == 1 && digito[1] == 0 && digito[2] == 1)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[2])
                     + " Waranga " + complementoDigitos(digito[3], digito[4], digito[5]);
 
-
-        //200, 300, 400, 500, 600, 700, 800, 900
         if(digito[0] != 0 && digito[0] != 1 && digito[1] == 0 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka Waranga " +
                     complementoDigitos(digito[3], digito[4], digito[5]);
 
-
-        //201, 202, 203, 204, 205, 206, 207, 208, 209 = 300, 400, 500, 600...
         if(digito[0] != 0 && digito[0] != 1 && digito[1] == 0 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[2])
                     + " Waranga " + complementoDigitos(digito[3], digito[4], digito[5]);
 
-
-        //110, 210, 310, 410, 510, 610, 710, 810, 910
         if(digito[0] != 0 && digito[1] == 1 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka Mari Waranga "
                     + complementoDigitos(digito[3], digito[4], digito[5]);
 
-        //111, 112, 113, 114, 115, 116, 117, 118, 119 = 200, 300, 400, 500...
         if(digito[0] != 0 && digito[1] == 1 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka Mari " + numeros.get(digito[2])
                     + " Waranga " + complementoDigitos(digito[3], digito[4], digito[5]);
 
-
-        //120, 130, 140, 150, 160, 170, 180, 190 = 200, 300, 400, 500...
         if(digito[0] != 0 && digito[1] != 1 && digito[1] != 0 && digito[2] == 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[1])
                     + " Mari Waranga " + complementoDigitos(digito[3], digito[4], digito[5]);
 
-
-        //todas las combinaciones
         if(digito[0] != 0 && digito[1] != 0 && digito[1] != 1 && digito[2] != 0)
             resultado = numeros.get(digito[0]) + " Pataka " + numeros.get(digito[1])
                     + " Mari " + numeros.get(digito[2]) + " Waranga "
                     + complementoDigitos(digito[3], digito[4], digito[5]);
-
 
         return resultado;
     }
@@ -319,54 +283,40 @@ public class NumerosActivity extends AppCompatActivity {
 
     private String complementoDigitos(int digito1, int digito2, int digito3)
     {
-
         resultado = "";
-        //000
         if(digito1 == 0 && digito2 == 0 && digito3 == 0)
             resultado = "";
 
-        //001, 002, 003, 004, 005, 006, 007, 008, 009
         if(digito1 == 0 && digito2 == 0 && digito3 != 0 )
             resultado = numeros.get(digito3);
 
-        //010
         if(digito1 == 0 && digito2 == 1 && digito3 == 0)
             resultado = numeros.get(10);
 
-        //011, 012, 013, 014, 015, 016, 017, 018, 019
         if(digito1 == 0 && digito2 == 1 && digito3 != 0)
             resultado = "Mari " + numeros.get(digito3);
 
-        //020, 030, 040, 050, 060, 070, 080, 090
         if(digito1 == 0 && digito2 != 1 && digito2 != 0 && digito3 == 0)
             resultado = numeros.get(digito2) + " Mari";
 
-        //100
         if(digito1 == 1 && digito2 == 0 && digito3 == 0)
             resultado = numeros.get(100);
 
-        //101
         if(digito1 == 1 && digito2 == 0 && digito3 == 1)
             resultado = numeros.get(digito1) + " Pataka " + numeros.get(digito3);
 
-        //200, 300, 400, 500, 600, 700, 800, 900
         if(digito1 != 0 && digito1 != 1 && digito2 == 0 && digito3 == 0)
             resultado = numeros.get(digito1) + " Pataka";
 
-        //201, 202, 203, 204, 205, 206, 207, 208, 209 = 300, 400, 500, 600...
         if(digito1 != 0 && digito1 != 1 && digito2 == 0 && digito3 != 0)
             resultado = numeros.get(digito1) + " Pataka " + numeros.get(digito3);
 
-        //110, 210, 310, 410, 510, 610, 710, 810, 910
         if(digito1 != 0 && digito2 == 1 && digito3 == 0)
             resultado = numeros.get(digito1) + " Pataka Mari";
 
-        //111, 112, 113, 114, 115, 116, 117, 118, 119 = 200, 300, 400, 500...
         if(digito1 != 0 && digito2 == 1 && digito3 != 0)
             resultado = numeros.get(digito1) + " Pataka Mari " + numeros.get(digito3);
 
-
-        //120, 130, 140, 150, 160, 170, 180, 190 = 200, 300, 400, 500...
         if(digito1 != 0 && digito2 != 1 && digito2 != 0 && digito3 == 0)
             resultado = numeros.get(digito1) + " Pataka " + numeros.get(digito2) + " Mari";
 
@@ -374,14 +324,13 @@ public class NumerosActivity extends AppCompatActivity {
             resultado = numeros.get(digito1) + " Pataka " + numeros.get(digito2) + " Mari "
                     + numeros.get(digito3);
 
-
         return resultado;
-    }//fin método complementoDigitos
+    }
 
-
-    private void limpiarResultado(){
+    private void limpiarResultado()
+    {
         resultado = "";
     }
 
 
-}//.
+}

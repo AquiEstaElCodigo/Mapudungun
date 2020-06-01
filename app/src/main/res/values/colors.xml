@@ -14,6 +14,9 @@
 
     <color name="color_titulos">#000000</color>
     <color name="color_texto_todocat">#000000</color>
-    <color name="backgroundSplash">#4CAF50</color>
+    <color name="backgroundSplash">#f9a825</color>
+
+    <color name="color_btn_diccionario">#2196f3</color>
+
 
 </resources>

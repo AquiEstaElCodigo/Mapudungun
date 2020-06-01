@@ -30,12 +30,9 @@
             android:src="@mipmap/banner" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/tv_informacion"
             android:text="@string/texto_mensajes"
-            android:layout_gravity="center"
-            android:textSize="@dimen/tamano_texto_mensajes" />
+            style="@style/estilo_mensaje" />
 
     </LinearLayout>
 

@@ -96,5 +96,14 @@
         <item name="android:textSize">@dimen/tamano_texto_mensajes</item>
     </style>
 
+    <style name="estilo_mensaje">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/color_texto_todocat</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/tamano_texto_mensajes</item>
+    </style>
+
 
 </resources>

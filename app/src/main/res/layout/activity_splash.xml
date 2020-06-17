@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_splash"
     android:gravity="center_vertical"
+    android:background="@color/backgroundSplash"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:contentDescription="@string/logo_splash"
-        android:src="@mipmap/logo_splash" />
+        android:src="@drawable/logo_splash" />
 
 
 </LinearLayout>

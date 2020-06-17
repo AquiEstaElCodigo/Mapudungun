@@ -9,7 +9,6 @@
 package cl.aquilotienes.mapudungun;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProviders;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
@@ -18,8 +17,6 @@ import android.view.View;
 import android.os.Bundle;
 import java.util.HashMap;
 import java.util.Map;
-
-import cl.aquilotienes.mapudungun.viewmodel.NumerosViewModel;
 
 /**
  * Created by Germán Riveros S.
@@ -33,7 +30,6 @@ public class NumerosActivity extends AppCompatActivity
     private EditText etNumeros;
     private String resultado;
     private Map<Integer, String> numeros;
-    private NumerosViewModel numerosViewModel;
     private final String MENSAJE_ERROR = "Ingrese un número entre 1 y 999999";
 
     @Override
@@ -42,8 +38,6 @@ public class NumerosActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        numerosViewModel = ViewModelProviders.of(this).get(NumerosViewModel.class);
 
         resultado = "";
         numeros = new HashMap<Integer, String>();
